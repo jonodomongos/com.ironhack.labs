@@ -32,12 +32,12 @@ public class Main {
         Zapato zapato5 = new ZapatoDeporte("Nike", "P-6000", "Sintético", 42, 109.99);
         Zapato zapato6 = new ZapatoDeporte("Addidas", "SL 72 RS", "Sintético", 41, 65);
 
-//        System.out.println("_zapato1_" + "\n" + zapato1 + "€");
-//        System.out.println("\n_zapato2_" + "\n" + zapato2 + "€");
-//        System.out.println("\n_zapato3_" + "\n" + zapato3 + "€");
-//        System.out.println("\n_zapato4_" + "\n" + zapato4 + "€");
-//        System.out.println("\n_zapato5_" + "\n" + zapato5 + "€");
-//        System.out.println("\n_zapato6_" + "\n" + zapato6 + "€");
+        System.out.println("-> Opción 1 <-" + "\n" + zapato1 + "€");
+        System.out.println("\n-> Opción 2 <-" + "\n" + zapato2 + "€");
+        System.out.println("\n-> Opción 3 <-" + "\n" + zapato3 + "€");
+        System.out.println("\n-> Opción 4 <-" + "\n" + zapato4 + "€");
+        System.out.println("\n-> Opción 5 <-" + "\n" + zapato5 + "€");
+        System.out.println("\n-> Opción 6 <-" + "\n" + zapato6 + "€\n");
 
         Scanner scanner = new Scanner(System.in);
 
@@ -46,7 +46,7 @@ public class Main {
         double gastoTotal = 0;
 
         do {
-            System.out.println("Qué tipo de zapato quieres comprar?\nPresiona (1) --> Elegante\nPresiona (2) --> Casual\nPresiona (3) --> Deportivos\nEscribe 'salir' para terminar");
+            System.out.println("Qué tipo de zapato quieres comprar?\nPresiona (1) -> Elegante\nPresiona (2) -> Casual\nPresiona (3) -> Deportivos\nEscribe 'salir' para terminar");
             tipoZapato = scanner.nextLine();
 
             if (tipoZapato.equals("1")){
@@ -56,13 +56,13 @@ public class Main {
                 if (tipoModelo.equals(zapato1.getModelo())){
                     gastoTotal += zapato1.getPrecio();
                     totalZapatos ++;
-                    System.out.println("-----> Añadido: " + zapato1.getMarca() + ", " + zapato1.getModelo() + " (" + zapato1.getPrecio() + "€)");
-                    System.out.println("-----> Total artículos: " + totalZapatos + ". Llevas gastado: " + gastoTotal + "€");
+                    System.out.println("---> Añadido: " + zapato1.getModelo() + " -" + zapato1.getMarca() + "- (" + zapato1.getPrecio() + "€)");
+                    System.out.println("---> Total artículos: " + totalZapatos + "\n---> Llevas gastado: " + gastoTotal + "€");
                 } else if (tipoModelo.equals(zapato2.getModelo())) {
                     gastoTotal += zapato2.getPrecio();
                     totalZapatos ++;
-                    System.out.println("-----> Añadido: " + zapato2.getMarca() + ", " + zapato2.getModelo() + " (" + zapato2.getPrecio() + "€)");
-                    System.out.println("-----> Total artículos: " + totalZapatos + ". Llevas gastado: " + gastoTotal + "€");
+                    System.out.println("---> Añadido: " + zapato2.getModelo() + " -" + zapato2.getMarca() + "- (" + zapato2.getPrecio() + "€)");
+                    System.out.println("---> Total artículos: " + totalZapatos + "\n---> Llevas gastado: " + gastoTotal + "€");
                 } else {
                     System.err.println("Modelo incorrecto, vuelve a escribirlo");
                 }
@@ -74,13 +74,13 @@ public class Main {
                 if (tipoModelo.equals(zapato3.getModelo())){
                     gastoTotal += zapato3.getPrecio();
                     totalZapatos ++;
-                    System.out.println("-----> Añadido: " + zapato3.getMarca() + ", " + zapato3.getModelo() + " (" + zapato3.getPrecio() + "€)");
-                    System.out.println("-----> Total artículos: " + totalZapatos + ". Llevas gastado: " + gastoTotal + "€");
+                    System.out.println("---> Añadido: " + zapato3.getModelo() + " -" + zapato3.getMarca() + "- (" + zapato3.getPrecio() + "€)");
+                    System.out.println("---> Total artículos: " + totalZapatos + "\n---> Llevas gastado: " + gastoTotal + "€");
                 } else if (tipoModelo.equals(zapato4.getModelo())) {
                     gastoTotal += zapato4.getPrecio();
                     totalZapatos ++;
-                    System.out.println("-----> Añadido: " + zapato4.getMarca() + ", " + zapato4.getModelo() + " (" + zapato4.getPrecio() + "€)");
-                    System.out.println("-----> Total artículos: " + totalZapatos + ". Llevas gastado: " + gastoTotal + "€");
+                    System.out.println("---> Añadido: " + zapato4.getModelo() + " -" + zapato4.getMarca() + "- (" + zapato4.getPrecio() + "€)");
+                    System.out.println("---> Total artículos: " + totalZapatos + "\n---> Llevas gastado: " + gastoTotal + "€");
                 } else {
                     System.err.println("Modelo incorrecto, vuelve a escribirlo");
                 }
@@ -92,13 +92,13 @@ public class Main {
                 if (tipoModelo.equals(zapato5.getModelo())){
                     gastoTotal += zapato5.getPrecio();
                     totalZapatos ++;
-                    System.out.println("-----> Añadido: " + zapato5.getMarca() + ", " + zapato5.getModelo() + " (" + zapato5.getPrecio() + "€)");
-                    System.out.println("-----> Total artículos: " + totalZapatos + ". Llevas gastado: " + gastoTotal + "€");
+                    System.out.println("---> Añadido: " + zapato5.getModelo() + " -" + zapato5.getMarca() + "- (" + zapato5.getPrecio() + "€)");
+                    System.out.println("---> Total artículos: " + totalZapatos + "\n---> Llevas gastado: " + gastoTotal + "€");
                 } else if (tipoModelo.equals(zapato6.getModelo())) {
                     gastoTotal += zapato6.getPrecio();
                     totalZapatos ++;
-                    System.out.println("-----> Añadido: " + zapato6.getMarca() + ", " + zapato6.getModelo() + " (" + zapato6.getPrecio() + "€)");
-                    System.out.println("-----> Total artículos: " + totalZapatos + ". Llevas gastado: " + gastoTotal + "€");
+                    System.out.println("---> Añadido: " + zapato6.getModelo() + " -" + zapato6.getMarca() + "- (" + zapato6.getPrecio() + "€)");
+                    System.out.println("---> Total artículos: " + totalZapatos + "\n---> Llevas gastado: " + gastoTotal + "€");
                 } else {
                     System.err.println("Modelo incorrecto, vuelve a escribirlo");
                 }

@@ -64,11 +64,11 @@ public class Zapato {
 
     @Override
     public String toString() {
-        return  "marca: " + marca +
-                "\nmodelo: " + modelo +
-                "\nmaterial: " + material +
-                "\ntalla: " + talla +
-                "\nprecio: " + precio
+        return  "MARCA: " + marca +
+                "\nMODELO: " + modelo +
+                "\nMATERIAL: " + material +
+                "\nTALLA: " + talla +
+                "\nPRECIO: " + precio
                 ;
     }
 }
