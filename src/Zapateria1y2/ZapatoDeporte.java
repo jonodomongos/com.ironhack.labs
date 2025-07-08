@@ -1,4 +1,4 @@
-package Zapateria;
+package Zapateria1y2;
 
 public class ZapatoDeporte extends Zapato{
     public ZapatoDeporte(String marca, String modelo, String material, double talla, double precio) {

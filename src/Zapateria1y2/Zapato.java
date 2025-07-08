@@ -1,4 +1,4 @@
-package Zapateria;
+package Zapateria1y2;
 
 public class Zapato {
 
